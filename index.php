@@ -12,31 +12,37 @@
 
 
     <main class="form-signin w-50 m-auto">
-        <form class='m-auto'>
+        <?php
+        if (isset($success)) { ?>
+            <div class="alert alert-<? $success ? 'success' : 'danger' ?> alert-dismissible fade show" role="alert">
+                <strong>Your Form Got Sent!</strong> We will contact you shortly.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        <?php } ?>
+        <form class='m-auto' method="POST" action="api/send_form.php">
             <h1 class="h3 mb-3 fw-normal">Please Fill This Form</h1>
 
             <div class="row mb-3">
                 <div class="col-6">
-
-                    <label for="exampleFormControlInput1" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Omar">
+                    <label for="first_name" class="form-label">First Name</label>
+                    <input type="text" class="form-control" name="first_name" id="first_name" placeholder="Omar">
                 </div>
                 <div class="col-6">
-                    <label for="exampleFormControlInput1" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ali">
+                    <label for="last_name" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Ali">
                 </div>
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Phone</label>
-                <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="+1 234 567-8910">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="+1 234 567-8910">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
             </div>
             <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <label for="message" class="form-label">Your Message</label>
+                <textarea class="form-control" name="message" id="message" rows="3"></textarea>
             </div>
             <button class="w-100 btn btn-lg btn-primary  my-2" type="submit">Submit</button>
             <p class="mt-5 mb-3 text-muted">© 2017–2023</p>
