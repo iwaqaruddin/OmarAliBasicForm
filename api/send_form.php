@@ -8,7 +8,7 @@ $message = $_POST['message'];
 
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "root";
 $my_db = 'omarali_db';
 $con = new mysqli($servername, $username, $password, $my_db);
 

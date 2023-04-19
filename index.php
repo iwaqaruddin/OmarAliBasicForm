@@ -13,28 +13,28 @@
 
     <main class="form-signin w-50 m-auto">
         <?php
-        if (isset($success)) { ?>
+        if (isset($success)==1) { ?>
             <div class="alert alert-<? $success ? 'success' : 'danger' ?> alert-dismissible fade show" role="alert">
                 <strong>Your Form Got Sent!</strong> We will contact you shortly.
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         <?php } ?>
         <form class='m-auto' method="POST" action="api/send_form.php">
-            <h1 class="h3 mb-3 fw-normal">Please Fill This Form</h1>
+            <h1 class="h3 mb-3 fw-normal">Please fill out this Form</h1>
 
             <div class="row mb-3">
                 <div class="col-6">
                     <label for="first_name" class="form-label">First Name</label>
-                    <input type="text" class="form-control" name="first_name" id="first_name" placeholder="Omar">
+                    <input type="text" class="form-control" name="first_name" id="first_name" placeholder="First">
                 </div>
                 <div class="col-6">
                     <label for="last_name" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Ali">
+                    <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Last">
                 </div>
             </div>
             <div class="mb-3">
                 <label for="phone" class="form-label">Phone</label>
-                <input type="tel" class="form-control" name="phone" id="phone" placeholder="+1 234 567-8910">
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="555-555-5555">
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
