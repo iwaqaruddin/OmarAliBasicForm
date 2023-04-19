@@ -13,12 +13,13 @@
 
     <main class="form-signin w-50 m-auto">
         <?php
-        if (isset($success)) { ?>
-            <div class="alert alert-<? $success ? 'success' : 'danger' ?> alert-dismissible fade show" role="alert">
+        $success = isset($_GET['success']);
+        if ($success == 1) { ?>
+            <div class="alert alert-<?= $success == 1 ? 'success' : 'danger' ?> alert-dismissible fade show" role="alert">
                 <strong>Your Form Got Sent!</strong> We will contact you shortly.
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-        <?php } ?>
+        <?php }; ?>
         <form class='m-auto' method="POST" action="api/send_form.php">
             <h1 class="h3 mb-3 fw-normal">Please Fill This Form</h1>
 
