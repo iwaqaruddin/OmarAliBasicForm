@@ -13,7 +13,8 @@
 
     <main class="form-signin w-50 m-auto">
         <?php
-        if (isset($success)) { ?>
+        $success = isset($_GET['success']);
+        if ($success) { ?>
             <div class="alert alert-<? $success ? 'success' : 'danger' ?> alert-dismissible fade show" role="alert">
                 <strong>Your Form Got Sent!</strong> We will contact you shortly.
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
