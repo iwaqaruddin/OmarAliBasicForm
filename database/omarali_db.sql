@@ -20,7 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `omarali_db`
 --
-
+CREATE DATABASE omarali_db;
+use omarali_db;
 -- --------------------------------------------------------
 
 --
@@ -29,7 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `contact_form` (
   `id` int(11) NOT NULL,
-  `timestamp` varchar(50) NOT NULL DEFAULT current_timestamp(),
+  `timestamp` TIMESTAMP NOT NULL DEFAULT current_timestamp(),
   `first_name` varchar(20) NOT NULL,
   `last_name` varchar(20) NOT NULL,
   `phone` varchar(15) NOT NULL,
@@ -40,21 +41,6 @@ CREATE TABLE `contact_form` (
 --
 -- Dumping data for table `contact_form`
 --
-
-INSERT INTO `contact_form` (`id`, `timestamp`, `first_name`, `last_name`, `phone`, `email`, `message`) VALUES
-(1, 'current_timestamp()', 'Waqar', 'Uddin', '01234546465454', 'waqar@dshfkj.coi', 'test message'),
-(2, '2023-03-21 21:54:16', ' Waqar ', ' Qarni  ', ' 03482454537  ', ' waqar13ify@gmail.com  ', ' Checking '),
-(3, '2023-03-21 21:55:09', ' Omar ', ' Ali  ', ' +1 234 567 890', ' oafleming@gmail.com  ', ' This is a test message. '),
-(4, '2023-03-21 21:57:24', ' Omar ', ' Ali  ', ' +1 234 567 890', ' oafleming@gmail.com  ', ' This is a test message. '),
-(5, '2023-03-21 22:02:18', ' Waqar ', ' Qarni  ', ' 03482454537  ', ' waqar13ify@gmail.com  ', ' test message '),
-(6, '2023-03-21 22:02:41', ' Waqar ', ' Qarni  ', ' 03482454537  ', ' waqar13ify@gmail.com  ', ' test message '),
-(7, '2023-03-21 22:03:01', ' Waqar ', ' Qarni  ', ' 03482454537  ', ' waqar13ify@gmail.com  ', ' test  '),
-(8, '2023-03-21 22:03:15', ' Waqar ', ' Qarni  ', ' 03482454537  ', ' waqar13ify@gmail.com  ', ' test  '),
-(9, '2023-03-21 22:03:26', ' Waqar ', ' Qarni  ', ' 03482454537  ', ' waqar13ify@gmail.com  ', ' test  '),
-(10, '2023-03-21 22:04:15', '  ', '   ', '   ', '   ', ' test '),
-(11, '2023-03-21 22:05:02', ' Waqar ', ' Qarni  ', ' 03482454537  ', ' waqar13ify@gmail.com  ', ' tet '),
-(12, '2023-03-21 22:05:22', ' Waqar ', ' Qarni  ', ' 03482454537  ', ' waqar13ify@gmail.com  ', ' tet '),
-(13, '2023-03-21 22:05:28', ' Waqar ', ' Qarni  ', ' 03482454537  ', ' waqar13ify@gmail.com  ', ' tet ');
 
 --
 -- Indexes for dumped tables
