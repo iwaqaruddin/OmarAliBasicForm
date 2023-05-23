@@ -26,24 +26,24 @@
             <div class="row mb-3">
                 <div class="col-6">
                     <label for="first_name" class="form-label">First Name</label>
-                    <input type="text" class="form-control" name="first_name" id="first_name" placeholder="First">
+                    <input type="text" class="form-control" name="first_name" id="first_name" placeholder="First" required>
                 </div>
                 <div class="col-6">
                     <label for="last_name" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Last">
+                    <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Last" required>
                 </div>
             </div>
             <div class="mb-3">
                 <label for="phone" class="form-label">Phone</label>
-                <input type="tel" class="form-control" name="phone" id="phone" placeholder="555-555-5555">
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="555-555-5555" required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+                <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
             </div>
             <div class="mb-3">
                 <label for="message" class="form-label">Your Message</label>
-                <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                <textarea class="form-control" name="message" id="message" rows="3" required></textarea>
             </div>
             <button class="w-100 btn btn-lg btn-primary  my-2" type="submit">Submit</button>
             <p class="mt-5 mb-3 text-muted">© 2017–2023</p>
