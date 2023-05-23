@@ -35,7 +35,7 @@
             </div>
             <div class="mb-3">
                 <label for="phone" class="form-label">Phone</label>
-                <input type="tel" class="form-control" name="phone" id="phone" placeholder="555-555-5555" required>
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
