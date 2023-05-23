@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `omarali_db`
 --
-CREATE DATABASE omarali_db;
-use omarali_db;
 -- --------------------------------------------------------
 
 --
