@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Form</title>
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="assets/css/style.css" rel="stylesheet" crossorigin="anonymous">
 </head>
 
 <body>
@@ -50,7 +50,7 @@
         </form>
     </main>
 
-    <script src="assets/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script> -->
 </body>
 
 </html>
