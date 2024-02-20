@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Form</title>
+    <!-- external style sheet -->
     <link href="assets/css/style.css" rel="stylesheet" crossorigin="anonymous">
 </head>
 
@@ -16,8 +17,10 @@
         $success = isset($_GET['success']);
         if ($success) { ?>
             <div class="alert alert-<?= $success ? 'success' : 'danger' ?> alert-dismissible fade show" role="alert">
-                <strong>Your Form Got Sent!</strong> We will contact you shortly.
+                <strong>Sent!</strong> Thank you.
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                <a href="index.php">Home</a>
+                
             </div>
         <?php }; ?>
         <form class='m-auto' method="POST" action="api/send_form.php">
@@ -46,7 +49,7 @@
                 <textarea class="form-control" name="message" id="message" rows="3" required></textarea>
             </div>
             <button class="w-100 btn btn-lg btn-primary  my-2" type="submit">Submit</button>
-            <p class="mt-5 mb-3 text-muted">© 2017–2023</p>
+            <p class="mt-5 mb-3 text-muted">© 2008–2024, CLOUDTRIAD.COM </p>
         </form>
     </main>
 
