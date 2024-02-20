@@ -1,0 +1,3 @@
+tasks:
+    - export DEPLOYPATH=/home/dflkqtjshd78/repositories/OmarAliBasicForm1
+    - /bin/cp -R * $DEPLOYPATH
