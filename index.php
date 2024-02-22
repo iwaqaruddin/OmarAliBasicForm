@@ -17,7 +17,7 @@
         $success = isset($_GET['success']);
         if ($success) { ?>
             <div class="alert alert-<?= $success ? 'success' : 'danger' ?> alert-dismissible fade show" role="alert">
-                <strong>Sent!</strong> Thank you Man.
+                <strong>Sent!</strong> Thank you...
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 <a href="index.php">Home</a>
                 

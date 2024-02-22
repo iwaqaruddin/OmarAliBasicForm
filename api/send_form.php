@@ -6,9 +6,9 @@ $phone = $_POST['phone'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
-$servername = "198.12.218.12";
-$username = "omarali";
-$password = "12345";
+$servername = "localhost";
+$username = "root";
+$password = "root";
 $my_db = 'omarali_db';
 $con = new mysqli($servername, $username, $password, $my_db);
 
