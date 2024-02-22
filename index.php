@@ -24,7 +24,7 @@
             </div>
         <?php }; ?>
         <form class='m-auto' method="POST" action="api/send_form.php">
-            <h1 class="h3 mb-3 fw-normal">Please fill out this Form</h1>
+            <h1 class="h3 mb-3 fw-normal">Fill out this form Today!</h1>
 
             <div class="row mb-3">
                 <div class="col-6">
